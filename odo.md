@@ -15,8 +15,11 @@ Use odo 3.0 and OpenShift for this demo.
 - A shared development kubernetes cluster with enough resouces
 
 
-Inner development loop and outer development loop:
+Inner development loop means local coding, build, deploy and test before commit code changes.
+
 ![inner_development_loop](https://developers.redhat.com/sites/default/files/styles/article_floated/public/blog/2020/05/To-Staging.png)
+
+
 
 ## Install odo
 
