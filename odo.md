@@ -2,7 +2,7 @@
 
 Use odo 3.0 and OpenShift for this demo.
 
-Pros.
+**Pros.**
 - Fast build, deploy and run your application in kubernetes cluster
 - Auto rebuild, redeploy your application once the source codes changed
 - Auto delete/recycle kubernetes resource once exit odo development mode
@@ -10,7 +10,7 @@ Pros.
 - Don't require pipeline
 - Don't need write container file and kubernetes YAML fiels
 
-Cons.
+**Cons.**
 - Only work for **inner development loop** for local development (code-build-deploy-test)
 - A shared development kubernetes cluster with enough resouces
 
@@ -49,7 +49,7 @@ Login to OpenShift Cluster:
 odo login --token ...
 ```
 
-Create a new project:
+Create a new OpenShift project:
 ```bash
 odo create project spring-demo
 ```
