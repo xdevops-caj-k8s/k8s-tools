@@ -7,6 +7,8 @@ Use odo 3.0 and OpenShift for this demo.
 - Auto rebuild, redeploy your application once the source codes changed
 - Auto delete/recycle kubernetes resource once exit odo development mode
 - Every developer can have his indepent working namespace in kubernetes
+- Sync files from local to kubernetes cluster
+- Port forwarding from kubernetes service to local port
 - Don't require pipeline
 - Don't need write container file and kubernetes YAML fiels
 
@@ -65,6 +67,8 @@ odo init
 
 A `devfile.yaml` has now been added to your directory and now you're ready to start development.
 
+The `.odo` folder is added into `.gitignore`.
+
 ### Step 3. Developing your application continuously
 
 ```bash
@@ -90,3 +94,18 @@ The following kubernetes resources are created in the project:
 
 Press Ctrl+c to exit `odo dev` and delete kuberentes resources from the cluster.
 
+
+## References
+
+### Kubernetes port forward
+
+https://kubernetes.io/zh-cn/docs/tasks/access-application-cluster/port-forward-access-application-cluster/
+
+Example;
+```bash
+# local port 40002 foward to service 8080 port
+kubectl port-forward service/demo-app 40002:8080
+
+# use openshift command
+oc port-forward service/demo-app 40002:8080
+```
