@@ -97,6 +97,10 @@ Press Ctrl+c to exit `odo dev` and delete kuberentes resources from the cluster.
 
 ## References
 
+## ODO Documents
+
+- [How odo 3.0 GA improves the developer experience](https://developers.redhat.com/articles/2022/10/24/odo-v3-ga-improves-developer-experience#)
+
 ### Kubernetes port forward
 
 https://kubernetes.io/zh-cn/docs/tasks/access-application-cluster/port-forward-access-application-cluster/
